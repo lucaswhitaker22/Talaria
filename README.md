@@ -61,7 +61,15 @@ Here is how you can run this simulation
 First, clone this repo to your local directory. 
 Then, install the dependences, I suggest that you use conda:
 ```
+# Omit build info
+conda env export -n talaria -f talaria.yml --no-builds
 conda env create -f talaria.yml
+```
+## Setup
+Setup pip depedencies
+```
+pip install . 
+pip install -r requirements.txt
 ```
 
 ## Running 
@@ -69,7 +77,7 @@ conda env create -f talaria.yml
 cd ./talaria
 
 conda activate talaria
-export PYTHONPATH='.'
+set PYTHONPATH='.'
 
 python ./blocksim/pbft_main.py
 ```
