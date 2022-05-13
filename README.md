@@ -60,8 +60,9 @@ Here is how you can run this simulation
 ## Installation 
 First, clone this repo to your local directory. 
 Then, install the dependences, I suggest that you use conda:
+
+Note: First command omits build info in talaria.yml
 ```
-# Omit build info
 conda env export -n talaria -f talaria.yml --no-builds
 conda env create -f talaria.yml
 ```
