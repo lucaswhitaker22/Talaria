@@ -57,30 +57,38 @@ The network is a low level class which interacts with the underlying event frame
 ---
 # Run the Simulation
 Here is how you can run this simulation
-## Installation 
-First, clone this repo to your local directory. 
-Then, install the dependences, I suggest that you use conda:
-
-Note: First command omits build info in talaria.yml
-```
-conda env export -n talaria -f talaria.yml --no-builds
-conda env create -f talaria.yml
-```
 ## Setup
-Setup pip depedencies
+Setup pip depedencies.
 ```
+cd ./talaria
 pip install . 
 pip install -r requirements.txt
 ```
 
+## Installation 
+First, clone this repo to your local directory. 
+Then, install the dependences, I suggest that you use conda:
+
+Omits build info in talaria.yml
+```
+conda env export -n talaria -f talaria.yml --no-builds
+```
+Build the Conda enviroment
+```
+conda env create -f talaria.yml
+```
+
 ## Running 
 ```
-cd ./talaria
-
 conda activate talaria
 set PYTHONPATH='.'
 
 python ./blocksim/pbft_main.py
+```
+
+Use export instead of set for unix/linux systems
+```
+export PYTHONPATH='.'
 ```
 This runs the pBFT protocol as default.
 
