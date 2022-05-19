@@ -98,6 +98,7 @@ This runs the pBFT protocol as default.
 This material is based on work supported by the Defense Advanced Research Projects Agency (DARPA) and Space and Naval Warfare Systems Center, Pacific (SSC Pacific) under contract number N6600118C4031.
 
 # Notes from Blocksim
+https://static.carlosfaria.pt/file/personal-assets/talks/blocksim-ieee-blockchain-2019.pdf
 ## Models
 
 ### Network Model
@@ -107,11 +108,19 @@ This material is based on work supported by the Defense Advanced Research Projec
 - It also simulates the occurrence of orphan blocks
 
 ### Node Model
-
+- P2P network functionality
+- Origin node starts listening for inbound communications from a destination node; a node can send a direct message or broadcast a message to all neighbours
+- It also apply a delay when receiving and sending messages, corresponding to node throughput
+- This model is normally extended to implement a specific blockchain client implementation
+- 
 ### Chain Model
+- Mimic the behaviour of a chain:
+- when adding a block, checks if the block is being added to the head; if the case, adds a block to the chain. Otherwise, the block is added to a queue
+- when is not being added to the head, and the previous hash points to an old block, it creates a fork on the chain by creating a secondary chain. Then, it checks if the block should be the new head by calculating the difficulty of the chain. If this is the case, it accepts the secondary chain as the main chain
 
 ### Consensus Model
-
+- We do not perform block or transaction validation, it adds a delay that simulates the validation process
+- It also defines a simple equation to calculate the difficulty of a new block: It simplifies and resembles ideas from Ethereum and Bitcoin by incrementing the difficulty of a block when it is created in less time
 
 # Other Notes
 
