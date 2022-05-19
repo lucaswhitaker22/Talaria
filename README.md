@@ -148,13 +148,16 @@ difficulty = Pd+(Bts-Pts)
 - It also defines a simple equation to calculate the difficulty of a new block: It simplifies and resembles ideas from Ethereum and Bitcoin by incrementing the difficulty of a block when it is created in less time
 
 ## Modeling Bitcoin
+- Simulation World receives the block size limit and the probability distribution for the number of transactions per block
+- There are miner nodes and non-miner nodes
+- Miner nodes: broadcast its candidate block to the network (when selected by the Network)
 ![image](https://user-images.githubusercontent.com/19495613/169376928-111628d8-b232-411c-911b-0b1584bd1de6.png)
-
 ![image](https://user-images.githubusercontent.com/19495613/169376670-382dd90f-4092-4f84-875c-7a34900bb03b.png)
 
 ## Modeling Ethereum
+- Simulation World receives the block gas limit and start gas for every transaction
+Ex. if we set the simulation to have a block gas limit of 10,000, and for a transaction start gas of 1,000, then we can fit 10 transactions
 ![image](https://user-images.githubusercontent.com/19495613/169376888-34b5f8b4-0401-4a7f-b5fe-4b3fef183e27.png)
-
 ![image](https://user-images.githubusercontent.com/19495613/169376733-3c542f6c-fca4-4e49-88d4-099733167306.png)
 
 # Other Notes
