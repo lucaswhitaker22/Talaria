@@ -106,16 +106,21 @@ from blocksim.permissioned_transaction_factory import PermTransactionFactory
 from blocksim.world import SimulationWorld
 
 ### permissioned_transaction_factory.py
+- TransactionFactory (transaction_factory.py)
 from blocksim.transaction_factory import TransactionFactory
+- Models
 from blocksim.models.ethereum.transaction import Transaction as ETHTransaction
 from blocksim.models.transaction import Transaction
 
 ### permissioned_node_factory.py
+- Models
 from blocksim.models.bitcoin.node import BTCNode
 from blocksim.models.ethereum.dlasc_node import ETHNode
 from blocksim.models.poa.node import POANode
 from blocksim.models.pbft.node import PBFTNode
 from blocksim.models.pbft_network import MaliciousModel
+
+- NodeFactory (node_factory.py)
 from blocksim.node_factory import NodeFactory
 
 
