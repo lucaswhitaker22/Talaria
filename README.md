@@ -120,6 +120,9 @@ https://static.carlosfaria.pt/file/personal-assets/talks/blocksim-ieee-blockchai
 
 ### Consensus Model
 - We do not perform block or transaction validation, it adds a delay that simulates the validation process
+
+difficulty = Pd+(Bts-Pts)
+
 - It also defines a simple equation to calculate the difficulty of a new block: It simplifies and resembles ideas from Ethereum and Bitcoin by incrementing the difficulty of a block when it is created in less time
 
 # Other Notes
