@@ -112,7 +112,7 @@ https://static.carlosfaria.pt/file/personal-assets/talks/blocksim-ieee-blockchai
 - Control the access of resources by the entities
 - Creation of blockchain system entities (nodes, blocks, transactions)
 
-### Simulation World
+### Simulation World (world.py)
 Management of simulation input parameters:
 - Configuration File
 - Delays
