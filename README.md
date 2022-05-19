@@ -97,12 +97,32 @@ This runs the pBFT protocol as default.
 
 This material is based on work supported by the Defense Advanced Research Projects Agency (DARPA) and Space and Naval Warfare Systems Center, Pacific (SSC Pacific) under contract number N6600118C4031.
 
-![image](https://user-images.githubusercontent.com/19495613/169375338-8c9398b3-b895-465d-9e9d-2382b414d8f0.png)
+
 
 # Notes from Blocksim
 https://static.carlosfaria.pt/file/personal-assets/talks/blocksim-ieee-blockchain-2019.pdf
+
+## Architecture
+
+![image](https://user-images.githubusercontent.com/19495613/169375338-8c9398b3-b895-465d-9e9d-2382b414d8f0.png)
+
+### Discrete Event Simulation Engine
+- Manages simulation clock
+- Scheduling, queing and processing events
+- Control the access of resources by the entities
+- Creation of blockchain system entities (nodes, blocks, transactions)
+
+### Simulation World
+Management of simulation input parameters:
+- Configuration File
+- Delays
+- Latency
+- Throughput Received and Sent
+
 ## Models
+
 ![image](https://user-images.githubusercontent.com/19495613/169374091-bdcab8ff-d96d-4e19-8922-f488fa8c27fa.png)
+
 ### Network Model
 - Contains the state of each node; build connection channels; apply network latency
 - Nodes are selected to broadcast their candidate block; Interval between each selection is the time between blocks
@@ -126,6 +146,12 @@ https://static.carlosfaria.pt/file/personal-assets/talks/blocksim-ieee-blockchai
 difficulty = Pd+(Bts-Pts)
 
 - It also defines a simple equation to calculate the difficulty of a new block: It simplifies and resembles ideas from Ethereum and Bitcoin by incrementing the difficulty of a block when it is created in less time
+
+## Modeling Bitcoin
+![image](https://user-images.githubusercontent.com/19495613/169376670-382dd90f-4092-4f84-875c-7a34900bb03b.png)
+
+## Modeling Ethereum
+![image](https://user-images.githubusercontent.com/19495613/169376733-3c542f6c-fca4-4e49-88d4-099733167306.png)
 
 # Other Notes
 
