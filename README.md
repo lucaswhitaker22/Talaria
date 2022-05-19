@@ -97,10 +97,11 @@ This runs the pBFT protocol as default.
 
 This material is based on work supported by the Defense Advanced Research Projects Agency (DARPA) and Space and Naval Warfare Systems Center, Pacific (SSC Pacific) under contract number N6600118C4031.
 
+
 # Notes from Blocksim
 https://static.carlosfaria.pt/file/personal-assets/talks/blocksim-ieee-blockchain-2019.pdf
 ## Models
-
+![image](https://user-images.githubusercontent.com/19495613/169374091-bdcab8ff-d96d-4e19-8922-f488fa8c27fa.png)
 ### Network Model
 - Contains the state of each node; build connection channels; apply network latency
 - Nodes are selected to broadcast their candidate block; Interval between each selection is the time between blocks
