@@ -148,9 +148,13 @@ difficulty = Pd+(Bts-Pts)
 - It also defines a simple equation to calculate the difficulty of a new block: It simplifies and resembles ideas from Ethereum and Bitcoin by incrementing the difficulty of a block when it is created in less time
 
 ## Modeling Bitcoin
+![image](https://user-images.githubusercontent.com/19495613/169376928-111628d8-b232-411c-911b-0b1584bd1de6.png)
+
 ![image](https://user-images.githubusercontent.com/19495613/169376670-382dd90f-4092-4f84-875c-7a34900bb03b.png)
 
 ## Modeling Ethereum
+![image](https://user-images.githubusercontent.com/19495613/169376888-34b5f8b4-0401-4a7f-b5fe-4b3fef183e27.png)
+
 ![image](https://user-images.githubusercontent.com/19495613/169376733-3c542f6c-fca4-4e49-88d4-099733167306.png)
 
 # Other Notes
