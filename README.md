@@ -112,7 +112,7 @@ https://static.carlosfaria.pt/file/personal-assets/talks/blocksim-ieee-blockchai
 - Origin node starts listening for inbound communications from a destination node; a node can send a direct message or broadcast a message to all neighbours
 - It also apply a delay when receiving and sending messages, corresponding to node throughput
 - This model is normally extended to implement a specific blockchain client implementation
-- 
+
 ### Chain Model
 - Mimic the behaviour of a chain:
 - when adding a block, checks if the block is being added to the head; if the case, adds a block to the chain. Otherwise, the block is added to a queue
