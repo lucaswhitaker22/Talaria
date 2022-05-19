@@ -98,6 +98,8 @@ This runs the pBFT protocol as default.
 This material is based on work supported by the Defense Advanced Research Projects Agency (DARPA) and Space and Naval Warfare Systems Center, Pacific (SSC Pacific) under contract number N6600118C4031.
 
 # Notes
+## Main
+
 ## Permissioned Blockchain:
 ### permissioned_main.py
 from blocksim.models.poa.poa_network import PoANetwork as Network
