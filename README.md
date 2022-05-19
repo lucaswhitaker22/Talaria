@@ -119,6 +119,17 @@ Management of simulation input parameters:
 - Latency
 - Throughput Received and Sent
 
+The world starts here. It sets the simulation world.
+
+The simulation world can be configured with the following characteristics:
+- param int sim_duration: duration of the simulation
+- param str blockchain: the type of blockchain being simulated (e.g. bitcoin or ethereum)
+- param dict time_between_block_distribution: Probability distribution to represent the time between blocks
+- param dict validate_tx_distribution: Probability distribution to represent the transaction validation delay
+- param dict validate_block_distribution: Probability distribution to represent the block validation delay
+
+Each distribution is represented as dictionary, with the following schema: { 'name': str, 'parameters': tuple }
+
 ## Models
 
 ![image](https://user-images.githubusercontent.com/19495613/169374091-bdcab8ff-d96d-4e19-8922-f488fa8c27fa.png)
