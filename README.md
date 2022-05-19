@@ -97,3 +97,29 @@ This runs the pBFT protocol as default.
 
 This material is based on work supported by the Defense Advanced Research Projects Agency (DARPA) and Space and Naval Warfare Systems Center, Pacific (SSC Pacific) under contract number N6600118C4031.
 
+# Notes
+## Permissioned Blockchain:
+### permissioned_main.py
+from blocksim.models.poa.poa_network import PoANetwork as Network
+from blocksim.permissioned_node_factory import PermNodeFactory
+from blocksim.permissioned_transaction_factory import PermTransactionFactory
+from blocksim.world import SimulationWorld
+
+### permissioned_transaction_factory.py
+from blocksim.transaction_factory import TransactionFactory
+from blocksim.models.ethereum.transaction import Transaction as ETHTransaction
+from blocksim.models.transaction import Transaction
+
+### permissioned_node_factory.py
+from blocksim.models.bitcoin.node import BTCNode
+from blocksim.models.ethereum.dlasc_node import ETHNode
+from blocksim.models.poa.node import POANode
+from blocksim.models.pbft.node import PBFTNode
+from blocksim.models.pbft_network import MaliciousModel
+from blocksim.node_factory import NodeFactory
+
+
+
+
+
+
