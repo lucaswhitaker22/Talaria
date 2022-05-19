@@ -97,18 +97,48 @@ This runs the pBFT protocol as default.
 
 This material is based on work supported by the Defense Advanced Research Projects Agency (DARPA) and Space and Naval Warfare Systems Center, Pacific (SSC Pacific) under contract number N6600118C4031.
 
-# Notes
+# Notes from Blocksim
+## Models
+
+### Network Model
+- Contains the state of each node; build connection channels; apply network latency
+- Nodes are selected to broadcast their candidate block; Interval between each selection is the time between blocks
+- Nodes have a hash rate; greater hash rate, greater the probability of the node being chosen
+- It also simulates the occurrence of orphan blocks
+
+### Node Model
+
+### Chain Model
+
+### Consensus Model
+
+
+# Other Notes
+
+# Classes
+
+## Main:
+### NodeFactory
+from blocksim.models.bitcoin.node import BTCNode
+from blocksim.models.ethereum.node import ETHNode
+
+### TransactionFactory
+from blocksim.models.transaction import Transaction
+from blocksim.models.ethereum.transaction import Transaction as ETHTransaction
+
+
 ## Permissioned Blockchain:
 ### permissioned_main.py
 from blocksim.models.poa.poa_network import PoANetwork as Network
+
 from blocksim.permissioned_node_factory import PermNodeFactory
 from blocksim.permissioned_transaction_factory import PermTransactionFactory
+
 from blocksim.world import SimulationWorld
 
 ### permissioned_transaction_factory.py
-- TransactionFactory (transaction_factory.py)
 from blocksim.transaction_factory import TransactionFactory
-- Models
+
 from blocksim.models.ethereum.transaction import Transaction as ETHTransaction
 from blocksim.models.transaction import Transaction
 
@@ -120,7 +150,6 @@ from blocksim.models.poa.node import POANode
 from blocksim.models.pbft.node import PBFTNode
 from blocksim.models.pbft_network import MaliciousModel
 
-- NodeFactory (node_factory.py)
 from blocksim.node_factory import NodeFactory
 
 
