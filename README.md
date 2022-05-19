@@ -97,6 +97,7 @@ This runs the pBFT protocol as default.
 
 This material is based on work supported by the Defense Advanced Research Projects Agency (DARPA) and Space and Naval Warfare Systems Center, Pacific (SSC Pacific) under contract number N6600118C4031.
 
+![image](https://user-images.githubusercontent.com/19495613/169375338-8c9398b3-b895-465d-9e9d-2382b414d8f0.png)
 
 # Notes from Blocksim
 https://static.carlosfaria.pt/file/personal-assets/talks/blocksim-ieee-blockchain-2019.pdf
