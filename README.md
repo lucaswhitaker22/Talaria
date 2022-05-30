@@ -65,6 +65,7 @@ pip install .
 pip install -r requirements.txt
 ```
 
+Note: You need to run **pip install .** every time you make changes within the /blocksim/ dir
 ## Installation 
 First, clone this repo to your local directory. 
 Then, install the dependences, I suggest that you use conda:
@@ -77,6 +78,7 @@ Build the Conda enviroment
 ```
 conda env create -f talaria.yml
 ```
+
 
 ## Running 
 ```
